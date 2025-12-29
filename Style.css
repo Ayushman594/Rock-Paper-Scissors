@@ -20,6 +20,7 @@ button{
 }
 .align{
     margin-right: 40px;
+    margin-left:28px;
 }
 .align button,button[type="reset"]{
     display:block;
@@ -102,4 +103,5 @@ button[type="reset"]{
     margin-left: 30%;
     margin-right: auto;
 }
+
 }
