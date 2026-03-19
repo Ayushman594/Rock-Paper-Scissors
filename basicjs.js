@@ -1,6 +1,6 @@
 let btn=document.querySelectorAll('button');
 const reset=document.querySelector('#Reset');
-let Display=document.querySelector('#display-result');
+let Display=document.querySelector('.display-result');
 let overallScore=document.querySelector('#score');
 
 
@@ -44,8 +44,7 @@ let compdata=parseInt(Math.random()*3);
         score.loss+=1;
         Display.innerText=`Comp Won! your choose ${bt.target.id} and comp choose ${compOutput}`;
         overallScore.innerText=`Wins:${score.wins} losses:${score.loss} and Draw:${score.Tie}`;
-        Display.setAttribute("class","red");
-       
+        Display.setAttribute("class","red");      
     }
     else if(bt.target.id=="scissors" && compOutput=="rock"){
         score.loss+=1;
@@ -80,6 +79,7 @@ let compdata=parseInt(Math.random()*3);
         Display.innerText=`Match Draw! your choose ${bt.target.id} and comp choose ${compOutput}`;
         overallScore.innerText=`Wins:${score.wins} losses:${score.loss} and Draw:${score.Tie}`;
         Display.setAttribute("class","aqua");
+
     }
     else if(bt.target.id=="paper" && compOutput=="scissors"){
         score.loss+=1;
